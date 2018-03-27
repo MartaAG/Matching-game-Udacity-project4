@@ -52,10 +52,6 @@ function starsCounter () {
     points.children[1].children[0].className = 'far fa-star';
     stars--;
   }
-  if (moveCounter === 40) {
-    points.children[2].children[0].className = 'far fa-star';
-    stars--;
-  }
 }
 
 function changeCard (evt) {
