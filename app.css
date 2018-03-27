@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Padauk', sans-serif;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-family: 'Miltonian', cursive;
+    font-size: 60px;
+    color: #f9acbb;
+}
+
+/* icons */
+
+.fa-star {
+  color: #f9acbb;
+}
+
+.timer, .restart, .moves {
+  color: black;
+}
+
+footer {
+  color: black;
+  text-align: center;
+}
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 100%;
+    max-width: 660px;
+    min-height: 680px;
+    background: #a2eae0;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    font-size: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    background: #92d7ef;
+}
+.deck .card2 {
+  height: 125px;
+  width: 125px;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
